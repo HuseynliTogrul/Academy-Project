@@ -1,4 +1,5 @@
 ﻿
+using Academy.Core.Enums;
 using Academy.Service.Services.Interfaces;
 
 namespace Academy.Service.Services.Implimentations
@@ -41,6 +42,28 @@ namespace Academy.Service.Services.Implimentations
                 }
             }
 
+
+        }
+        async Task CreatStudent()
+        {
+
+        }
+        async Task UpdateStudent()
+        {
+            Console.WriteLine("Add Id");
+            string id = Console.ReadLine();
+            Console.WriteLine("Add FullName");
+            string FullName = Console.ReadLine();
+            Console.WriteLine("Add Group");
+            string Group = Console.ReadLine();
+            Console.WriteLine("Add Average");
+            int.TryParse(Console.ReadLine(),out int Average);
+
+            int i = 1;
+            foreach (var item in Enum.GetValues(typeof(StudentEducation)))
+            {
+
+            }
 
         }
     }
