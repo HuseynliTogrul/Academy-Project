@@ -22,10 +22,11 @@ namespace Academy.Service.Services.Implimentations
             }
             if (average < 0)
             {
-                return "0-dan kicik ola bilmez!";
+                return "average 0-dan kicik ola bilmez!";
             }
 
             Student student = new Student(fullName, group, average, studentEducation);
+            student.CreatAt = DateTime.UtcNow.AddHours(4);
             await _studentRepository.AddAsync(student);
             return "Successfully Create :)";
         }
@@ -44,12 +45,10 @@ namespace Academy.Service.Services.Implimentations
         {
             Student student = await _studentRepository.GetAsync(x=>x.Id==id);
             if(student==null)
-            {
-                Console.WriteLine("Student not to found!");
-            }
+                return "Student not found :(";
 
             Console.WriteLine($"Id:{student.Id},fullname:{student.FullName},average:{student.Average},studentEducation:{student.StudentEducation},create:{student.CreatAt},update:{student.UpdateAt}");
-            return "successfull";
+            return "successfull :)";
         }
 
         public async Task<string> RemoveAsync(string id)
@@ -57,25 +56,42 @@ namespace Academy.Service.Services.Implimentations
             Student student = await _studentRepository.GetAsync(x => x.Id == id);
             if (student == null)
             {
-                Console.WriteLine("Student not to found!");
+                Console.WriteLine("Student not to found :(");
             }
 
             await _studentRepository.RemoveAsync(student);
-            return "successfull";
+            return "Remove successfull :)";
         }
 
         public async Task<string> UptadedAsync(string id,string fullName, string group, double average, StudentEducation studentEducation)
         {
             Student student = await _studentRepository.GetAsync(x => x.Id == id);
+
+            if (string.IsNullOrWhiteSpace(fullName))
+            {
+                return "fullname bos ola bilmez!";
+            }
+            if (string.IsNullOrWhiteSpace(group))
+            {
+                return "group bos ola bilmez!";
+            }
+            if (average < 0)
+            {
+                return "average 0-dan kicik ola bilmez!";
+            }
+
             if (student == null)
             {
-                Console.WriteLine("Student not to found!");
+                Console.WriteLine("Student not to found :(");
             }
+            student.Id = id;
             student.FullName = fullName;
             student.Group = group;
             student.Average = average;
+            student.StudentEducation = studentEducation;
             student.UpdateAt= DateTime.UtcNow.AddHours(4);
-            return "successfully";
+
+            return "Uptaded successfully :)";
         }
     }
 }

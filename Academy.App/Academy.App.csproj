@@ -11,4 +11,8 @@
     <Folder Include="Dependencies\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Academy.Service\Academy.Service.csproj" />
+  </ItemGroup>
+
 </Project>
