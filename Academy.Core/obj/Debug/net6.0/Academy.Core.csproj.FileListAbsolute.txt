@@ -9,3 +9,15 @@ C:\Users\acer\Desktop\c--Project\Academy.Core\obj\Debug\net6.0\Academy.Core.dll
 C:\Users\acer\Desktop\c--Project\Academy.Core\obj\Debug\net6.0\refint\Academy.Core.dll
 C:\Users\acer\Desktop\c--Project\Academy.Core\obj\Debug\net6.0\Academy.Core.pdb
 C:\Users\acer\Desktop\c--Project\Academy.Core\obj\Debug\net6.0\ref\Academy.Core.dll
+C:\Users\toghrulih\Desktop\c--Project\Academy.Core\bin\Debug\net6.0\Academy.Core.deps.json
+C:\Users\toghrulih\Desktop\c--Project\Academy.Core\bin\Debug\net6.0\Academy.Core.dll
+C:\Users\toghrulih\Desktop\c--Project\Academy.Core\bin\Debug\net6.0\Academy.Core.pdb
+C:\Users\toghrulih\Desktop\c--Project\Academy.Core\obj\Debug\net6.0\Academy.Core.csproj.AssemblyReference.cache
+C:\Users\toghrulih\Desktop\c--Project\Academy.Core\obj\Debug\net6.0\Academy.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\toghrulih\Desktop\c--Project\Academy.Core\obj\Debug\net6.0\Academy.Core.AssemblyInfoInputs.cache
+C:\Users\toghrulih\Desktop\c--Project\Academy.Core\obj\Debug\net6.0\Academy.Core.AssemblyInfo.cs
+C:\Users\toghrulih\Desktop\c--Project\Academy.Core\obj\Debug\net6.0\Academy.Core.csproj.CoreCompileInputs.cache
+C:\Users\toghrulih\Desktop\c--Project\Academy.Core\obj\Debug\net6.0\Academy.Core.dll
+C:\Users\toghrulih\Desktop\c--Project\Academy.Core\obj\Debug\net6.0\refint\Academy.Core.dll
+C:\Users\toghrulih\Desktop\c--Project\Academy.Core\obj\Debug\net6.0\Academy.Core.pdb
+C:\Users\toghrulih\Desktop\c--Project\Academy.Core\obj\Debug\net6.0\ref\Academy.Core.dll

@@ -99,11 +99,12 @@ namespace Academy.Service.Services.Implimentations
                 Console.WriteLine("Add StudentEducation:");
                 int.TryParse(Console.ReadLine(), out EnumIndex);
                 //isExsist = Enum.IsDefined(typeof(StudentEducation),(StudentEducation)EnumIndex);
-                isExsist = Enum.IsDefined(typeof(StudentEducation), EnumIndex);
+                isExsist = Enum.IsDefined(typeof(StudentEducation), (StudentEducation)EnumIndex);
             }
             while (!isExsist);
 
-            await studentservice.UptadedAsync(Id, FullName, Group, Average, (StudentEducation)EnumIndex);
+          string result =  await studentservice.UptadedAsync(Id, FullName, Group, Average, (StudentEducation)EnumIndex);
+            Console.WriteLine(result);
         }
         async Task RemoveAsync()
         {

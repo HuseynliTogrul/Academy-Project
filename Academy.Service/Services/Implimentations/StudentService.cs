@@ -22,6 +22,7 @@ namespace Academy.Service.Services.Implimentations
             }
             if (average < 0)
             {
+
                 return "average 0-dan kicik ola bilmez!";
             }
 
@@ -43,8 +44,8 @@ namespace Academy.Service.Services.Implimentations
 
         public async Task<string> GetAsync(string id)
         {
-            Student student = await _studentRepository.GetAsync(x=>x.Id==id);
-            if(student==null)
+            Student student = await _studentRepository.GetAsync(x => x.Id == id);
+            if (student == null)
                 return "Student not found :(";
 
             Console.WriteLine($"Id:{student.Id},fullname:{student.FullName},average:{student.Average},studentEducation:{student.StudentEducation},create:{student.CreatAt},update:{student.UpdateAt}");
@@ -63,34 +64,33 @@ namespace Academy.Service.Services.Implimentations
             return "Remove successfull :)";
         }
 
-        public async Task<string> UptadedAsync(string id,string fullName, string group, double average, StudentEducation studentEducation)
+        public async Task<string> UptadedAsync(string id, string fullName, string group, double average, StudentEducation studentEducation)
         {
             Student student = await _studentRepository.GetAsync(x => x.Id == id);
 
             if (string.IsNullOrWhiteSpace(fullName))
-            {
+
                 return "fullname bos ola bilmez!";
-            }
+
             if (string.IsNullOrWhiteSpace(group))
-            {
+
                 return "group bos ola bilmez!";
-            }
+
             if (average < 0)
-            {
+
                 return "average 0-dan kicik ola bilmez!";
-            }
+
 
             if (student == null)
-            {
-                Console.WriteLine("Student not to found :(");
-            }
-            student.Id = id;
-            student.FullName = fullName;
-            student.Group = group;
-            student.Average = average;
-            student.StudentEducation = studentEducation;
-            student.UpdateAt= DateTime.UtcNow.AddHours(4);
-
+            
+               return "Student not to found :(";
+            
+                student.Id = id;
+                student.FullName = fullName;
+                student.Group = group;
+                student.Average = average;
+                student.StudentEducation = studentEducation;
+                student.UpdateAt = DateTime.UtcNow.AddHours(4);
             return "Uptaded successfully :)";
         }
     }
