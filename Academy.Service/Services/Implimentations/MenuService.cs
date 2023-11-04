@@ -41,7 +41,7 @@ namespace Academy.Service.Services.Implimentations
                         await GetAsync();
                         break;
                     default:
-                        Console.WriteLine("duzgun deyer gir!");
+                        Console.WriteLine("enter correct value!");
                         break;
                 }
                 await Menu();

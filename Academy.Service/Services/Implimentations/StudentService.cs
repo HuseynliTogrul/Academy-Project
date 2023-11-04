@@ -13,18 +13,13 @@ namespace Academy.Service.Services.Implimentations
         public async Task<string> CreateAsync(string fullName, string group, double average, StudentEducation studentEducation)
         {
             if (string.IsNullOrWhiteSpace(fullName))
-            {
-                return "fullname bos ola bilmez!";
-            }
-            if (string.IsNullOrWhiteSpace(group))
-            {
-                return "group bos ola bilmez!";
-            }
-            if (average < 0)
-            {
+                return "fullname cannot be empty!";
 
-                return "average 0-dan kicik ola bilmez!";
-            }
+            if (string.IsNullOrWhiteSpace(group))
+                return "group cannot be empty!";
+
+            if (average < 0)
+                return "average cannot be less than 0!";
 
             Student student = new Student(fullName, group, average, studentEducation);
             student.CreatAt = DateTime.UtcNow.AddHours(4);
@@ -46,6 +41,7 @@ namespace Academy.Service.Services.Implimentations
         {
             Student student = await _studentRepository.GetAsync(x => x.Id == id);
             if (student == null)
+
                 return "Student not found :(";
 
             Console.WriteLine($"Id:{student.Id},fullname:{student.FullName},average:{student.Average},studentEducation:{student.StudentEducation},create:{student.CreatAt},update:{student.UpdateAt}");
@@ -67,19 +63,14 @@ namespace Academy.Service.Services.Implimentations
         public async Task<string> UptadedAsync(string id, string fullName, string group, double average, StudentEducation studentEducation)
         {
             Student student = await _studentRepository.GetAsync(x => x.Id == id);
-
             if (string.IsNullOrWhiteSpace(fullName))
-
-                return "fullname bos ola bilmez!";
+                return "fullname cannot be empty!";
 
             if (string.IsNullOrWhiteSpace(group))
-
-                return "group bos ola bilmez!";
+                return "group cannot be empty!";
 
             if (average < 0)
-
-                return "average 0-dan kicik ola bilmez!";
-
+                return "average cannot be less than 0!";
 
             if (student == null)
             
