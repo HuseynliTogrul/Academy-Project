@@ -68,8 +68,7 @@ namespace Academy.Service.Services.Implimentations
             {
                 Console.WriteLine("Choose StudentEducation:");
                 int.TryParse(Console.ReadLine(), out EnumIndex);
-                //isExsist = Enum.IsDefined(typeof(StudentEducation),(StudentEducation)EnumIndex);
-                isExsist = Enum.IsDefined(typeof(StudentEducation), EnumIndex);
+                isExsist = Enum.IsDefined(typeof(StudentEducation),(StudentEducation)EnumIndex);
             }
             while (!isExsist);
 
@@ -98,7 +97,6 @@ namespace Academy.Service.Services.Implimentations
             {
                 Console.WriteLine("Add StudentEducation:");
                 int.TryParse(Console.ReadLine(), out EnumIndex);
-                //isExsist = Enum.IsDefined(typeof(StudentEducation),(StudentEducation)EnumIndex);
                 isExsist = Enum.IsDefined(typeof(StudentEducation), (StudentEducation)EnumIndex);
             }
             while (!isExsist);
