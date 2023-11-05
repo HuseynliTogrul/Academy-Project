@@ -21,3 +21,14 @@ C:\Users\toghrulih\Desktop\c--Project\Academy.Core\obj\Debug\net6.0\Academy.Core
 C:\Users\toghrulih\Desktop\c--Project\Academy.Core\obj\Debug\net6.0\refint\Academy.Core.dll
 C:\Users\toghrulih\Desktop\c--Project\Academy.Core\obj\Debug\net6.0\Academy.Core.pdb
 C:\Users\toghrulih\Desktop\c--Project\Academy.Core\obj\Debug\net6.0\ref\Academy.Core.dll
+C:\Users\acer\Desktop\Academy-Project\Academy.Core\bin\Debug\net6.0\Academy.Core.deps.json
+C:\Users\acer\Desktop\Academy-Project\Academy.Core\bin\Debug\net6.0\Academy.Core.dll
+C:\Users\acer\Desktop\Academy-Project\Academy.Core\bin\Debug\net6.0\Academy.Core.pdb
+C:\Users\acer\Desktop\Academy-Project\Academy.Core\obj\Debug\net6.0\Academy.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\acer\Desktop\Academy-Project\Academy.Core\obj\Debug\net6.0\Academy.Core.AssemblyInfoInputs.cache
+C:\Users\acer\Desktop\Academy-Project\Academy.Core\obj\Debug\net6.0\Academy.Core.AssemblyInfo.cs
+C:\Users\acer\Desktop\Academy-Project\Academy.Core\obj\Debug\net6.0\Academy.Core.csproj.CoreCompileInputs.cache
+C:\Users\acer\Desktop\Academy-Project\Academy.Core\obj\Debug\net6.0\Academy.Core.dll
+C:\Users\acer\Desktop\Academy-Project\Academy.Core\obj\Debug\net6.0\refint\Academy.Core.dll
+C:\Users\acer\Desktop\Academy-Project\Academy.Core\obj\Debug\net6.0\Academy.Core.pdb
+C:\Users\acer\Desktop\Academy-Project\Academy.Core\obj\Debug\net6.0\ref\Academy.Core.dll

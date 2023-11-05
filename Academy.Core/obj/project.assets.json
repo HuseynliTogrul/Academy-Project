@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\toghrulih\\.nuget\\packages\\": {}
+    "C:\\Users\\acer\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\toghrulih\\Desktop\\c--Project\\Academy.Core\\Academy.Core.csproj",
+      "projectUniqueName": "C:\\Users\\acer\\Desktop\\Academy-Project\\Academy.Core\\Academy.Core.csproj",
       "projectName": "Academy.Core",
-      "projectPath": "C:\\Users\\toghrulih\\Desktop\\c--Project\\Academy.Core\\Academy.Core.csproj",
-      "packagesPath": "C:\\Users\\toghrulih\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\toghrulih\\Desktop\\c--Project\\Academy.Core\\obj\\",
+      "projectPath": "C:\\Users\\acer\\Desktop\\Academy-Project\\Academy.Core\\Academy.Core.csproj",
+      "packagesPath": "C:\\Users\\acer\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\acer\\Desktop\\Academy-Project\\Academy.Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\toghrulih\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -61,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

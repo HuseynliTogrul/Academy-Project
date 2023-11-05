@@ -14,8 +14,6 @@ namespace Academy.Core.Models
 
         public Student(string fullName, string group, double average, StudentEducation studentEducation)
         {
-            
-            
             FullName = fullName;
             Group = group;
             Average = average;

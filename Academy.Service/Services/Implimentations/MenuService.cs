@@ -66,7 +66,7 @@ namespace Academy.Service.Services.Implimentations
             int EnumIndex;
             do
             {
-                Console.WriteLine("Add StudentEducation:");
+                Console.WriteLine("Choose StudentEducation:");
                 int.TryParse(Console.ReadLine(), out EnumIndex);
                 //isExsist = Enum.IsDefined(typeof(StudentEducation),(StudentEducation)EnumIndex);
                 isExsist = Enum.IsDefined(typeof(StudentEducation), EnumIndex);
