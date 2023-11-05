@@ -33,7 +33,7 @@ namespace Academy.Service.Services.Implimentations
 
             foreach (Student student in students)
             {
-                Console.WriteLine($"Id:{student.Id},fullname:{student.FullName},average:{student.Average},studentEducation:{student.StudentEducation},create:{student.CreatAt},update:{student.UpdateAt}");
+                Console.WriteLine($"Id:{student.Id},fullname:{student.FullName},group:{student.Group},average:{student.Average},studentEducation:{student.StudentEducation},create:{student.CreatAt},update:{student.UpdateAt}");
             }
         }
 
@@ -44,7 +44,7 @@ namespace Academy.Service.Services.Implimentations
 
                 return "Student not found :(";
 
-            Console.WriteLine($"Id:{student.Id},fullname:{student.FullName},average:{student.Average},studentEducation:{student.StudentEducation},create:{student.CreatAt},update:{student.UpdateAt}");
+            Console.WriteLine($"Id:{student.Id},fullname:{student.FullName},group:{student.Group},average:{student.Average},studentEducation:{student.StudentEducation},create:{student.CreatAt},update:{student.UpdateAt}");
             return "successfull :)";
         }
 
